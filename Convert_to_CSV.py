@@ -1,3 +1,6 @@
+# Author: Rishav Bhattacharjee
+# Date: 24th September, 2024
+
 import numpy as np
 import pandas as pd
 
