@@ -19,7 +19,7 @@ This FastAPI application allows users to upload a test dataset, which is then pr
 ### Prerequisites:
 1. **Python 3.7+** installed on your system.
 2. Install the required dependencies using pip:\
- # pip install fastapi uvicorn pandas numpy scikit-learn matplotlib pydantic dill
+ pip install fastapi uvicorn pandas numpy scikit-learn matplotlib pydantic dill
 
 
 3. **Model Files**: You need the following pre-trained model and pipeline files saved on your system:
@@ -32,5 +32,23 @@ Make sure to update the paths to these files in the `pipeline_path` and `model_p
 1. Clone or copy this project to your local machine.
 2. Ensure the required model and pipeline files are present and the paths in the code are updated correctly.
 3. Open a terminal, navigate to the project directory, and run the following command:
-# uvicorn fastapi_app --reload
+uvicorn fastapi_app --reload
+
+4. The app will be hosted on `http://127.0.0.1:8000/`.
+
+---
+
+## API Endpoints
+
+### 1. Root (`/`)
+- **Method**: `GET`
+- **Description**: Basic root route that returns a welcome message.
+- **Response**: 
+```json
+{
+ "message": "Welcome to the FastAPI app! Use /predict/ for predictions."
+}
+
+
+
 
