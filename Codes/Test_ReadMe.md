@@ -17,3 +17,18 @@ You can install these using the following command:
 ```bash
 pip install numpy pandas joblib matplotlib scikit-learn dill
 ```
+
+## Instructions
+### Step 1: Set the Path to the Test Data
+In the script, the variable test_data_path is already set to:
+```python
+test_data_path = r'F:\DM\full_data.csv'
+```
+
+Ensure that this path points to the correct CSV file on your machine.
+
+
+### Step 2: Check for Missing or Extra Columns
+The script automatically checks whether the test data has the required columns. If any expected columns are missing or extra columns are present, it will raise an error or drop the extra columns.
+
+Expected columns:
