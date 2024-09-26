@@ -15,7 +15,7 @@ API_URL = "http://127.0.0.1:8000"  # Update this if running on a different host/
 page_bg_img = '''
 <style>
 .stApp {
-    background-image: url("https://img.freepik.com/free-photo/cosmos-nebula-universe-background_1017-3388.jpg?t=st=1726932065~exp=1726935665~hmac=d0a7cabc3b6b6cd36b6c5a11937b3942002c81f32c3b1055b3c8076757e8d346&w=996");
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/681/554/339/abstract-planet-space-purple-wallpaper-preview.jpg");
     background-size: cover;
     background-position: center;
 }
