@@ -30,7 +30,7 @@ Copy code
 F:\
  └── DM\
      ├── Pipeline\
-     │   └── full_pipeline_dill.pkl   # Preprocessing pipeline file
+     │   └── full_pipeline_dill.pkl   # Preprocessing pipeline file\
      └── Model\
          └── best_xgb_model_dill.pkl  # Trained model file
 Modify the paths in the code if your files are located elsewhere.
