@@ -19,8 +19,9 @@ This FastAPI application allows users to upload a test dataset, which is then pr
 ### Prerequisites:
 1. **Python 3.7+** installed on your system.
 2. Install the required dependencies using pip:\
- pip install fastapi uvicorn pandas numpy scikit-learn matplotlib pydantic dill
-
+```bash 
+pip install fastapi uvicorn pandas numpy scikit-learn matplotlib pydantic dill
+```
 
 3. **Model Files**: You need the following pre-trained model and pipeline files saved on your system:
 - Preprocessing pipeline (`full_pipeline_dill.pkl`)
