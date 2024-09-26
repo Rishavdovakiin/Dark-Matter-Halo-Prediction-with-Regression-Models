@@ -56,7 +56,7 @@ uvicorn fastapi_app --reload
 - **Request**: Upload a CSV file with the expected columns.
 - **Example**:
 ```json
-  curl -X POST "http://127.0.0.1:8000/predict/" -F "file=@path_to_your_test_data.csv"
+curl -X POST "http://127.0.0.1:8000/predict/" -F "file=@path_to_your_test_data.csv"
 ```
 
 ### 3. Plot (/plot/)
