@@ -83,7 +83,7 @@ curl -X POST "http://127.0.0.1:8000/predict/" -F "file=@path_to_your_test_data.c
 - **File Upload Errors**: Ensure that the CSV file is correctly formatted and contains all the required columns.
 - **Model Load Errors**: Double-check the paths and ensure that the correct model files are being loaded.
 
-Enjoy using the FastAPI Prediction App!
+# Enjoy using the FastAPI Prediction App!
 
 ```css
 This readme provides a step-by-step guide for setting up and running your FastAPI application, covering all necessary details from installation to endpoints and troubleshooting.
