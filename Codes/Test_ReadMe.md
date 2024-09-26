@@ -32,3 +32,10 @@ Ensure that this path points to the correct CSV file on your machine.
 The script automatically checks whether the test data has the required columns. If any expected columns are missing or extra columns are present, it will raise an error or drop the extra columns.
 
 Expected columns:
+```python
+expected_columns = [
+    'Virial Mass', 'Virial Radius', 'Velocity Disp', 'Vmax', 'Spin',
+    'B to A', 'C to A', 'Energy ratio', 'Peak Mass', 'peak Vmax',
+    'Halfmass a', 'Peakmass a', 'Acc Rate', 'Concentration'
+]
+```
