@@ -48,6 +48,14 @@ uvicorn fastapi_app --reload
 {
  "message": "Welcome to the FastAPI app! Use /predict/ for predictions."
 }
+```
+## Predict (/predict/)
+- **Method**:`POST`
+- **Description**: Upload a CSV file to make predictions. The file must contain test data with expected columns. Missing values and preprocessing are handled automatically.
+- **Response**: A JSON object containing the path to the saved CSV output file and, if applicable, the RMSE score.
+- **Request**: Upload a CSV file with the expected columns.
+- **Example**:
+  curl -X POST "http://127.0.0.1:8000/predict/" -F "file=@path_to_your_test_data.csv"
 
 
 
