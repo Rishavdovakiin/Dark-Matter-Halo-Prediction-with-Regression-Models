@@ -39,3 +39,47 @@ expected_columns = [
     'Halfmass a', 'Peakmass a', 'Acc Rate', 'Concentration'
 ]
 ```
+
+### Step 3: Load the Preprocessing Pipeline and Model
+Paths to the saved preprocessing pipeline and  model are already set in the script:
+```python
+pipeline_path = r'F:\DM\full_pipeline_1.pkl'  # Path to preprocessing pipeline
+xgb_model_path = r'F:\DM\Model\best_xgb_model.pkl'  # Path to saved XGBoost model
+```
+Ensure these paths point to the correct locations on your machine where the files are stored.
+
+### Step 5: Plot Predictions vs. Actual Labels
+If your test data contains actual labels for the dark matter halo concentration, the script will generate a plot showing the predicted values versus the actual labels.
+
+ - Diagonal Line: Represents a perfect prediction.
+ - Dots: Represent the model’s predictions versus the actual values.
+
+### Step 6: RMSE Calculation
+The script calculates the Root Mean Squared Error (RMSE) between the predicted values and the actual labels. This gives an idea of how well the model performed.
+
+The RMSE score is printed as follows:
+```bash
+The RMSE score of the prediction: <RMSE_Score>
+```
+
+### Step 7: Save Predictions to CSV
+The predicted dark matter halo concentration values are saved to a CSV file named ```predictions_output.csv``` in the current working directory.
+```bash
+Predictions saved to predictions_output.csv
+```
+
+## Running the Script
+To run the script, use the following command:
+```bash
+python test.py
+```
+Ensure that the test CSV file, preprocessing pipeline, and model paths are correctly set before running the script.
+
+## Output
+- Plot: A graph showing the predicted concentrations against actual labels.
+- RMSE Score: The calculated RMSE score printed to the console.
+- CSV File: A file named predictions_output.csv containing the predicted dark matter halo concentrations.
+
+## Notes
+- If your test data has missing columns, the script will raise an error indicating the missing features.
+- The paths for test data, model pipeline, and XGBoost model are already set; ensure they match the locations on your system.
