@@ -55,7 +55,7 @@ uvicorn fastapi_app --reload
 - **Response**: A JSON object containing the path to the saved CSV output file and, if applicable, the RMSE score.
 - **Request**: Upload a CSV file with the expected columns.
 - **Example**:
-```json
+```bash
 curl -X POST "http://127.0.0.1:8000/predict/" -F "file=@path_to_your_test_data.csv"
 ```
 
@@ -76,4 +76,15 @@ curl -X POST "http://127.0.0.1:8000/predict/" -F "file=@path_to_your_test_data.c
 ### Folder Structure
 - `fastapi_app.py`: Main FastAPI application code.
 - `ModelOutputs/`: A folder where the app will save the prediction CSV and plot files.\
-  -The files will be stored on the desktop under `ModelOutputs`.
+  - The files will be stored on the desktop under `ModelOutputs`.
+
+### Troubleshooting
+- **CORS Issues**: If you're facing CORS-related issues while connecting from a frontend app, ensure you update the CORS settings under allow_origins.
+- **File Upload Errors**: Ensure that the CSV file is correctly formatted and contains all the required columns.
+- **Model Load Errors**: Double-check the paths and ensure that the correct model files are being loaded.
+
+Enjoy using the FastAPI Prediction App!
+
+```css
+This readme provides a step-by-step guide for setting up and running your FastAPI application, covering all necessary details from installation to endpoints and troubleshooting.
+```
