@@ -49,14 +49,28 @@ uvicorn fastapi_app --reload
  "message": "Welcome to the FastAPI app! Use /predict/ for predictions."
 }
 ```
-## Predict (/predict/)
+## 2. Predict (/predict/)
 - **Method**:`POST`
 - **Description**: Upload a CSV file to make predictions. The file must contain test data with expected columns. Missing values and preprocessing are handled automatically.
 - **Response**: A JSON object containing the path to the saved CSV output file and, if applicable, the RMSE score.
 - **Request**: Upload a CSV file with the expected columns.
 - **Example**:
+```json
   curl -X POST "http://127.0.0.1:8000/predict/" -F "file=@path_to_your_test_data.csv"
+```
 
-
+### 3. Plot (/plot/)
+- **Method**: GET
+- **Description**: Fetch the generated plot (only available if labels are provided in the test data).
+- **Response**: Returns a PNG image comparing predictions vs labels.
+- 
+### 4. Download CSV (/download_csv/)
+- **Method**: GET
+- **Description**: Download the CSV file containing predictions.
+- **Response**: Returns a CSV file with predicted concentration values.
+### 5. Download Plot (/download_plot/)
+- **Method**: GET
+- **Description**: Download the prediction plot as a PNG image.
+- **Response**: Returns a PNG image file of the plot (if available).
 
 
