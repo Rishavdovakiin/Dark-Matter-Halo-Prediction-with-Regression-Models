@@ -73,4 +73,7 @@ curl -X POST "http://127.0.0.1:8000/predict/" -F "file=@path_to_your_test_data.c
 - **Description**: Download the prediction plot as a PNG image.
 - **Response**: Returns a PNG image file of the plot (if available).
 
-
+### Folder Structure
+- `fastapi_app.py`: Main FastAPI application code.
+- `ModelOutputs/`: A folder where the app will save the prediction CSV and plot files.
+  -The files will be stored on the desktop under `ModelOutputs`.
